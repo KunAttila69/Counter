@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button onclick="Sub()">-</button>
+        <div id="nums">
+            <span id="lowerCount">0</span>
+            <span id="currentCount">1</span>
+            <span id="higherCount">2</span>
+        </div>
+        <button onclick="Add()">+</button>
+    </main>
+</body>
+<script>
+    num = document.getElementById("currentCount").innerHTML
+    function Animate(asd){
+        if(asd == true){
+            document.getElementById('lowerCount').classList.add("fasz");
+        }
+    }
+    function Add() {
+        num++
+        Animate(true)
+    }
+    function Sub() {
+        num++
+        Animate(false)
+    }
+</script>
+</html>
